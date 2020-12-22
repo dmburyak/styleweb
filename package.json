@@ -1,7 +1,7 @@
 {
-  "name": "Awesomag",
+  "name": "styleweb",
   "version": "1.0.0",
-  "description": "Awesomag",
+  "description": "styleweb",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
