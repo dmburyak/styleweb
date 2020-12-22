@@ -18,5 +18,7 @@
     "gulp-uglify": "^3.0.2",
     "panini": "^1.7.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
 }
