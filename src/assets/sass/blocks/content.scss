@@ -1,0 +1,38 @@
+.content {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.content__parallax {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 5px #000;
+  color: #fff;
+}
+
+.content__parallax::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: cover;
+  z-index: -1;
+  background-image: url(../img/bg.jpg);
+  background-position: center top;
+}
+
+.content__static {
+  position: relative;
+  height: 100vh;
+  text-shadow: 0 0 5px #000;
+  color: #fff;
+  background-color: #555;
+}
