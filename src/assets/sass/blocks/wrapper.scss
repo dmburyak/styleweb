@@ -1,0 +1,32 @@
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.wrapper__parallax {
+  position: relative;
+  height: 100vh;
+}
+
+.wrapper__parallax::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center top;
+
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+}
+
+.wrapper__static {
+  position: relative;
+  height: 100vh;
+}
