@@ -1,13 +1,14 @@
 .wrapper {
   height: 100vh;
+
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
 }
 
 .wrapper__parallax {
-  position: relative;
   height: 100vh;
+  position: relative;
 }
 
 .wrapper__parallax::after {
@@ -20,13 +21,13 @@
 
   background-image: url(../img/bg.jpg);
   background-size: cover;
-  background-position: center top;
+  background-position: center;
 
   transform: translateZ(-1px) scale(1.5);
   z-index: -1;
 }
 
 .wrapper__static {
-  position: relative;
   height: 100vh;
+  position: relative;
 }
