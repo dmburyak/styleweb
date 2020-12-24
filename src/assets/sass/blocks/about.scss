@@ -6,10 +6,7 @@
   align-items: center;
 
   &:before {
-    content: "";
-    display: block;
-    width: 25%;
-    height: 100%;
+    @include left-column;
 
     background-color: $grey;
   }
