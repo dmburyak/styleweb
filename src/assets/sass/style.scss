@@ -1,5 +1,4 @@
 @import "vars";
-@import "mixins";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 /* Default styles */
@@ -20,6 +19,9 @@ body {
   color: $grey;
 }
 
+/* Vendor */
+@import "vendor/flexisel";
+
 /* Blocks */
 @import "blocks/sidebar";
 @import "blocks/logo";
@@ -29,6 +31,7 @@ body {
 @import "blocks/wrapper";
 @import "blocks/intro";
 @import "blocks/about";
+@import "blocks/work";
 
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
@@ -36,3 +39,4 @@ body {
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/transitions";
 @import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/modal";

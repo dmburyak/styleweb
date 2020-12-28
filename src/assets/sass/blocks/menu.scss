@@ -1,0 +1,41 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu__item {
+  padding: 12px;
+
+  color: $white;
+  text-decoration: none;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    margin-left: 15px;
+  }
+
+  &:hover {
+    &:after {
+      border: solid 1px $white;
+    }
+  }
+}
+
+.active.menu__item {
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    margin-left: 15px;
+
+    border: solid 1px $white;
+    background-color: $white;
+  }
+}

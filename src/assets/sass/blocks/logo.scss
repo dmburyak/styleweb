@@ -9,7 +9,7 @@
   font-size: 40px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
 
   color: $white;
 }
@@ -18,10 +18,8 @@
   border: solid 1px $white;
   position: relative;
 
-
-  &--left {
+  &--right {
     top: 10px;
     left: 10px;
   }
-
 }
