@@ -1,70 +1,80 @@
 .work {
-  width: $content-width;
-  height: 100%;
-  padding: 30px 20px 10px;
-  margin-left: o;
+  min-height: 100vh;
+  width: 100%;
+  padding-left: $sidebar-width;
+
+  & .work__border {
+    position: relative;
+    height: 100%;
+    margin: 0 20px;
+    padding-bottom: 30px;
+
+    border: solid 1px lighten($grey, 50%);
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+      border: solid 1px lighten($grey, 50%);
+    }
+  }
+
+  & .work__title {
+    width: 80%;
+    margin: 30px auto 30px;
+
+    font-weight: 400;
+
+    color: $blue;
+  }
 }
 
-.work__item {
+.work-item {
   position: relative;
-  max-width: 240px;
+  width: 100%;
+  height: auto;
 
-  background-color: $blue;
+  padding: 0 10px;
 
-  &:hover {
-    .work__img {
-      opacity: .2;
+  color: $white;
+
+  text-align: center;
+
+  & .work-item__img {
+    width: 100%;
+    height: auto;
+  }
+
+  & .work-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & .work-name__title {
     }
 
-    .work__name {
-      opacity: 1;
-      height: 100%;
+    & .work-name__info {
     }
 
-    .work__line {
-      width: 70%;
+    & .work-item__line {
+      height: 1px;
+      width: 66%;
+      margin: 10px 0;
+      background-color: $white;
     }
   }
 }
 
-.work__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 
-  cursor: pointer;
-
-  transition: opacity .1s linear;
-}
-
-.work__name {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50%;
-
-  text-align: center;
-
-  color: $white;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-
-  pointer-events: none;
-
-  opacity: 0;
-
-  transition: opacity .5s linear;
-  transition: height .3s linear;
-}
-
-.work__line {
-  width: 1%;
-  height: 1px;
-
-  background-color: $white;
-
-  transition: width .3s linear;
-}

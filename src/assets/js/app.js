@@ -1,3 +1,3 @@
-//= components/jquery.flexisel.js
+//= vendors/parallax.js
 
-//= components/slider.js
+//= components/slick.js

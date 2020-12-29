@@ -20,18 +20,9 @@ body {
 }
 
 /* Vendor */
-@import "vendor/flexisel";
+@import "vendor/slick";
+@import "vendor/slick-theme";
 
-/* Blocks */
-@import "blocks/sidebar";
-@import "blocks/logo";
-@import "blocks/menu";
-@import "blocks/social";
-@import "blocks/copyright";
-@import "blocks/wrapper";
-@import "blocks/intro";
-@import "blocks/about";
-@import "blocks/work";
 
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
@@ -40,3 +31,15 @@ body {
 @import "../../../node_modules/bootstrap/scss/transitions";
 @import "../../../node_modules/bootstrap/scss/grid";
 @import "../../../node_modules/bootstrap/scss/modal";
+
+/* Blocks */
+@import "blocks/sidebar";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/section";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/work";
+@import "blocks/slick";

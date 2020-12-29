@@ -1,7 +1,7 @@
 .about {
-  width: $content-width;
-  height: 100%;
+  min-height: 100vh;
   padding: 30px 50px 10px;
+  margin-left: $sidebar-width;
 }
 
 .about__title {
