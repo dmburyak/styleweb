@@ -1,10 +1,13 @@
 .section {
-  min-height: 100vh;
-
+  padding-top: 30px;
   display: flex;
   align-items: center;
 
   & + & {
     background: linear-gradient(90deg, $grey $sidebar-width, $white $sidebar-width);
+  }
+
+  &.section--parallax {
+    min-height: 100vh;
   }
 }
