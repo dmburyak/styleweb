@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+}
+
+.social__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+
+  background-color: $white;
+  border-radius: 7px;
+
+  &:hover {
+    background-color: $blue;
+
+    .social__icon {
+      fill: $white;
+    }
+  }
+
+  .social__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+

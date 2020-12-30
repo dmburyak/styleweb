@@ -1,0 +1,10 @@
+.section {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  & + & {
+    background: linear-gradient(90deg, $grey $sidebar-width, $white $sidebar-width);
+  }
+}

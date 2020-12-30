@@ -1,0 +1,41 @@
+.slick-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slick-next:before {
+  content: ">";
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+
+  color: $white;
+  background-color: rgba(0, 0, 0, .3);
+
+  border-radius: 3px;
+}
+
+.slick-dots {
+  bottom: -40px;
+
+  & li {
+    width: 15px;
+    height: 15px;
+
+    border: solid 1px $grey;
+    border-radius: 50%;
+    background-color: $white;
+
+    &.slick-active {
+      background-color: $grey;
+    }
+  }
+}
+
+.slick-dots li button:before {
+  content: "";
+}

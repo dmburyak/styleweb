@@ -6,23 +6,23 @@
 *,
 *:before,
 *:after {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
 body {
+  //padding: 0;
+  margin: 0;
+
   font-family: $default-font-family;
   font-size: $default-font-size;
+  line-height: 1.8;
+  color: $grey;
 }
 
-/* Blocks */
-@import "blocks/sidebar";
-@import "blocks/logo";
-@import "blocks/menu";
-@import "blocks/social";
-@import "blocks/copyright";
-@import "blocks/content";
+/* Vendor */
+@import "vendor/slick";
+@import "vendor/slick-theme";
+
 
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
@@ -30,3 +30,16 @@ body {
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/transitions";
 @import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/modal";
+
+/* Blocks */
+@import "blocks/sidebar";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/section";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/work";
+@import "blocks/slick";
