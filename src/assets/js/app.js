@@ -4,5 +4,6 @@
 $(function () {
 
     //= components/slick.js
+    //= components/menu.js
 
 });

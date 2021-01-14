@@ -4,7 +4,7 @@ title:  StyleWeb
 ---
 
 <main>
-    <section class="section  section--parallax" data-parallax="scroll" data-image-src="assets/img/bg.jpg">
+    <section class="section  section--parallax" data-parallax="scroll" data-image-src="assets/img/bg.jpg" id="intro">
         <div class="intro">
             <h2 class="intro__title">INTRODUCING STYLE WEB</h2>
             <div class="intro__text">
@@ -19,7 +19,7 @@ title:  StyleWeb
     </section>
 
     <section class="section">
-        <div class="about">
+        <div class="about" id="about">
             <div class="row">
                 <div class="col-xl">
                     <svg class="about__icon">
@@ -74,7 +74,7 @@ title:  StyleWeb
     </section>
 
     <section class="section">
-        <div class="work">
+        <div class="work" id="work">
             <div class="work__border">
                 <h2 class="work__title">Our Work</h2>
                 <div id="slider">
@@ -156,7 +156,7 @@ title:  StyleWeb
 
     </section>
     <section class="section">
-        <div class="clients">
+        <div class="clients" id="clients">
 
             <div class="row">
                 <div class="col-12">
@@ -217,7 +217,7 @@ title:  StyleWeb
 
     </section>
     <section class="section">
-        <div class="talk">
+        <div class="talk" id="talk">
             <div class="row">
                 <div class="col-xl">
 
@@ -226,22 +226,31 @@ title:  StyleWeb
                         <div class="talk-info__text">
                             <p>Manducare sed mire ducunt ad peritus abactus. Assimilatios cantare in camerarius
                                 brigantium! Mori
-                                solite ducunt ad neuter exemplar. Racanas credere, tanquam germanus elogium.</p>
+                                solite ducunt ad neuter exemplar. Racanas credere, tanquam germanus elogium.
+                                Assimilatios cantare in camerarius
+                                brigantium Assimilatios cantare in camerarius
+                                brigantium</p>
                         </div>
                     </div>
 
                 </div>
                 <div class="col-xl">
 
-                    <h2 class="about__title">Company Profile</h2>
-                    <div class="about__text">
-                        <p>Manducare sed mire ducunt ad peritus abactus. Assimilatios cantare in camerarius
-                            brigantium! Mori</p>
-                    </div><!-- /.about__text -->
+                    <form class="talk-form" action="/" method="post">
+                        <input class="talk-form__input" type="text" name="name" maxlength="100" placeholder="Your Name"
+                               required><br>
+                        <input class="talk-form__input" type="email" name="email" maxlength="100"
+                               placeholder="Your Email" required><br>
+                        <textarea class="talk-form__input" name="message" maxlength="1000" placeholder="Message..."
+                                  required></textarea><br>
+                        <button class="talk-form__input  talk-form__input--button" type="submit">SEND
+                        </button>
+                    </form>
+
                 </div><!-- /.col-xl -->
 
             </div><!-- /.row -->
-        </div><!-- /.about -->
+        </div><!-- /.talk -->
 
     </section>
 
