@@ -1,36 +1,40 @@
 .work {
-  min-height: 100vh;
   width: 100%;
   padding-left: $sidebar-width;
 
   & .work__border {
     position: relative;
     height: 100%;
-    margin: 0 20px;
-    padding-bottom: 30px;
+    margin: 0 50px;
+    padding-bottom: 60px;
 
-    border: solid 1px lighten($grey, 50%);
+    border: solid 1px $light-grey;
 
     &:after {
       content: "";
       display: block;
       width: 100%;
       height: 100%;
+
       position: absolute;
       top: 10px;
       left: 10px;
 
-      border: solid 1px lighten($grey, 50%);
+      border: solid 1px $light-grey;
     }
   }
 
   & .work__title {
-    width: 80%;
-    margin: 30px auto 30px;
+    width: 88%;
+    margin: 60px auto 40px;
 
     font-weight: 400;
-
     color: $blue;
+  }
+
+  @media (max-width: 960px) {
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -39,11 +43,27 @@
   width: 100%;
   height: auto;
 
-  padding: 0 10px;
-
+  text-align: center;
   color: $white;
 
-  text-align: center;
+  border: solid 5px $white;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    .work-name {
+      opacity: 1;
+      background-color: rgba($blue, .5);
+    }
+  }
+
+  & .work-item__line {
+    height: 1px;
+    width: 66%;
+    margin: 10% 0;
+
+    background-color: $white;
+  }
 
   & .work-item__img {
     width: 100%;
@@ -55,24 +75,32 @@
     top: 0;
     left: 0;
     height: 100%;
-    padding: 0 20px;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    opacity: 0;
+
+    transition: opacity .2s linear, background-color .2s linear;
 
     & .work-name__title {
+      padding: 0 20px;
+
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.3;
+      text-transform: uppercase;
     }
 
     & .work-name__info {
-    }
+      padding: 0 20px;
 
-    & .work-item__line {
-      height: 1px;
-      width: 66%;
-      margin: 10px 0;
-      background-color: $white;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.3;
     }
   }
 }

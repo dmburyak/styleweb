@@ -1,0 +1,34 @@
+.clients {
+  padding: 50px 50px 10px;
+  margin-left: $sidebar-width;
+
+  & .clients__title {
+    margin: 0 0 30px 20px;
+    display: inline-block;
+
+    font-weight: 400;
+
+    color: $blue;
+  }
+
+  & .clients__text {
+    margin-bottom: 40px;
+  }
+
+  & .clients__link {
+    height: 100px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid $light-grey;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 960px) {
+    margin-left: 0;
+  }
+}

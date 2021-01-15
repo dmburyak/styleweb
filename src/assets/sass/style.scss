@@ -10,7 +10,6 @@
 }
 
 body {
-  //padding: 0;
   margin: 0;
 
   font-family: $default-font-family;
@@ -19,21 +18,23 @@ body {
   color: $grey;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Vendor */
 @import "vendor/slick";
 @import "vendor/slick-theme";
-
 
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
-@import "../../../node_modules/bootstrap/scss/transitions";
 @import "../../../node_modules/bootstrap/scss/grid";
-@import "../../../node_modules/bootstrap/scss/modal";
 
 /* Blocks */
 @import "blocks/sidebar";
+@import "blocks/sidebar-toggle";
 @import "blocks/logo";
 @import "blocks/menu";
 @import "blocks/social";
@@ -43,3 +44,5 @@ body {
 @import "blocks/about";
 @import "blocks/work";
 @import "blocks/slick";
+@import "blocks/clients";
+@import "blocks/talk";

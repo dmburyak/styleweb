@@ -1,19 +1,26 @@
 <aside class="sidebar">
 
+    <button class="sidebar-toggle" id="sidebar-toggle">
+        <svg class="sidebar-toggle__icon">
+            <use xlink:href="#menu"></use>
+        </svg>
+    </button>
+
     <div class="logo">
-        <div class="logo__border">
-            <div class="logo__border  logo__border--right">
+        <a href="/">
+            <div class="logo__border">
                 <div class="logo__text">STYLE<br>WEB</div>
             </div>
-        </div>
+        </a>
 
     </div>
-    <nav class="menu">
-        <a class="menu__item  active" href="#">INTRO</a>
-        <a class="menu__item" href="#">ABOUT</a>
-        <a class="menu__item" href="#">WORK</a>
-        <a class="menu__item" href="#">CLIENTS</a>
-        <a class="menu__item" href="#">LET'S TALK</a>
+
+    <nav class="menu" id="menu">
+        <a class="menu__item active" href="#intro">INTRO</a>
+        <a class="menu__item" href="#about">ABOUT</a>
+        <a class="menu__item" href="#work">WORK</a>
+        <a class="menu__item" href="#clients">CLIENTS</a>
+        <a class="menu__item" href="#talk">LET'S TALK</a>
     </nav>
 
     <div class="social">
