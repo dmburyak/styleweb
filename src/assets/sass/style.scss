@@ -9,15 +9,6 @@
   box-sizing: border-box;
 }
 
-* {
-  scroll-behavior: smooth;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
 
@@ -43,6 +34,7 @@ a {
 
 /* Blocks */
 @import "blocks/sidebar";
+@import "blocks/sidebar-toggle";
 @import "blocks/logo";
 @import "blocks/menu";
 @import "blocks/social";

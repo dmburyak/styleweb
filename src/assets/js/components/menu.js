@@ -34,3 +34,12 @@ $("#menu a").on('click', function (event) {
         window.location.hash = hash;
     });
 });
+
+$("#sidebar-toggle").click(function (event) {
+    event.stopPropagation();
+    $(".sidebar").toggleClass("show");
+});
+
+$("body").click(function () {
+    $(".sidebar").removeClass("show");
+});

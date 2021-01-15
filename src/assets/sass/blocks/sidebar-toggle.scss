@@ -1,0 +1,22 @@
+.sidebar-toggle {
+  position: absolute;
+  top: 5px;
+  right: -35px;
+
+  padding: 5px 7px;
+  background-color: $grey;
+
+  border: none;
+  outline: none;
+  display: none;
+
+  @media (max-width: 960px) {
+    display: block;
+  }
+
+  .sidebar-toggle__icon {
+    width: 20px;
+    height: 15px;
+    fill: $white;
+  }
+}

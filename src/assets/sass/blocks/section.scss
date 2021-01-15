@@ -5,9 +5,14 @@
 
   & + & {
     background: linear-gradient(90deg, $grey $sidebar-width, $white $sidebar-width);
+
+    @media (max-width: 960px) {
+      background: linear-gradient($white, $white);
+    }
   }
 
   &.section--parallax {
     min-height: 100vh;
   }
+
 }
