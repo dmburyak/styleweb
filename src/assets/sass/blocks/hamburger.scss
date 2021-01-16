@@ -1,4 +1,4 @@
-.sidebar-toggle {
+.hamburger {
   position: absolute;
   top: 5px;
   right: -35px;
@@ -14,7 +14,7 @@
     display: block;
   }
 
-  .sidebar-toggle__icon {
+  .hamburger__icon {
     width: 20px;
     height: 15px;
     fill: $white;

@@ -1,3 +1,4 @@
+// set active menu item while scrolling
 $(window).on("scroll", function () {
 
     let visibleSections = [];
@@ -23,18 +24,20 @@ $(window).on("scroll", function () {
     }
 });
 
-$("#menu a").on('click', function (event) {
+// smooth scrolling
+$("#menu a").on("click", function (event) {
 
     event.preventDefault();
     let hash = this.hash;
 
-    $('html, body').animate({
+    $("html, body").animate({
         scrollTop: $(hash).offset().top
     }, 800, function () {
         window.location.hash = hash;
     });
 });
 
+// show/hide sidebar
 $("#sidebar-toggle").click(function (event) {
     event.stopPropagation();
     $(".sidebar").toggleClass("show");
